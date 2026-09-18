@@ -34,7 +34,7 @@ Set in `.env` (see `.env.template`):
 
 ## Think of scale—imagine your company has thousands of projects and employees. How do you handle it?
 
-Multiple Tokens ( Rate-Limited);
-Pagination;
-Add cache and handle objects;
+- Multiple Tokens ( Rate-Limited);
+- Pagination;
+- Add cache and handle objects;
 
