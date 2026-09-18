@@ -31,6 +31,16 @@ Set in `.env` (see `.env.template`):
 | `ASANA_API_MAXIMUM_REQUESTS_PER_MINUTE` | no | `120` | Client-side rate limit |
 | `ASANA_API_PAGINATION_LIMIT` | no | `1` | Page size used when listing users/projects | 
 
+Ticker intervals are not env vars — they're constants in `cmd/app.go`:
+
+```go
+const (
+	usersTickInterval    = 30 * time.Second // 1 * time.Second
+	projectsTickInterval = 5 * time.Minute  // 1 * time.Second
+)
+```
+
+Edit those values directly to change how often users/projects are re-fetched.
 
 ## Think of scale—imagine your company has thousands of projects and employees. How do you handle it?
 
