@@ -46,5 +46,4 @@ Edit those values directly to change how often users/projects are re-fetched.
 
 - Multiple Tokens ( Rate-Limited);
 - Pagination;
-- Add cache and handle objects;
-
+- Add cache on GIDs to track the modificatoins ( timestamp with createAt and modifietAt ) Add a Webhook documented via their API for just real time events/changes.
